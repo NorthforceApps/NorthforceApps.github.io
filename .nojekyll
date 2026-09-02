@@ -1,0 +1,1 @@
+# Skip Jekyll so sitemap.xml and home.xml are served as static files.
