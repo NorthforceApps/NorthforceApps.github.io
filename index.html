@@ -42,9 +42,10 @@
     .lead { color: var(--muted); font-size: 1.05rem; line-height: 1.55; margin: 0 0 40px; max-width: 42ch; }
     ul { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
     li { border-bottom: 1px solid var(--line); }
-    li a { display: grid; grid-template-columns: 1fr auto; gap: 8px 24px; padding: 20px 0; align-items: baseline; }
+    .app { display: grid; grid-template-columns: 1fr auto; gap: 8px 24px; padding: 20px 0; align-items: baseline; }
     .name { font-weight: 650; font-size: 1.05rem; }
-    .blurb { grid-column: 1; color: var(--muted); font-size: 0.95rem; line-height: 1.45; }
+    .actions { display: flex; gap: 14px; }
+    .blurb { grid-column: 1 / -1; color: var(--muted); font-size: 0.95rem; line-height: 1.45; }
     .go { color: var(--forest); font-size: 0.9rem; }
     footer { margin-top: 48px; color: var(--muted); font-size: 0.9rem; }
     footer a { color: var(--forest); text-decoration: underline; text-underline-offset: 3px; }
@@ -67,32 +68,44 @@
     <p class="lead">No ads, and we do not sell your data. Location, camera, and microphone stay on the phone unless you turn on sharing or export it yourself.</p>
     <ul>
       <li>
-        <a href="/gpslogger/">
+        <div class="app">
           <span class="name">GPS Logger</span>
-          <span class="go">Site</span>
+          <span class="actions">
+            <a class="go" href="/gpslogger/">Site</a>
+            <a class="go" href="https://play.google.com/store/apps/details?id=com.northforceapps.gpslogger&amp;referrer=utm_source%3Dnorthforceapps%26utm_medium%3Dorganic%26utm_campaign%3Dhome_gpslogger" rel="noopener">Play</a>
+          </span>
           <span class="blurb">Private route recorder and daily timeline. GPX in and out, screen-off logging, live share without a server-side trail.</span>
-        </a>
+        </div>
       </li>
       <li>
-        <a href="/cue-loop/">
+        <div class="app">
           <span class="name">CueLoop</span>
-          <span class="go">Site</span>
+          <span class="actions">
+            <a class="go" href="/cue-loop/">Site</a>
+            <a class="go" href="https://play.google.com/store/apps/details?id=com.cueloop.app&amp;referrer=utm_source%3Dnorthforceapps%26utm_medium%3Dorganic%26utm_campaign%3Dhome_cueloop" rel="noopener">Play</a>
+          </span>
           <span class="blurb">Gentle recurring cues on phone and Wear OS — hydration, posture, breaks — on your cadence.</span>
-        </a>
+        </div>
       </li>
       <li>
-        <a href="/remotemic/">
+        <div class="app">
           <span class="name">RemoteMic</span>
-          <span class="go">Site</span>
+          <span class="actions">
+            <a class="go" href="/remotemic/">Site</a>
+            <a class="go" href="https://play.google.com/store/apps/details?id=com.stream.remotemic&amp;referrer=utm_source%3Dnorthforceapps%26utm_medium%3Dorganic%26utm_campaign%3Dhome_remotemic" rel="noopener">Play</a>
+          </span>
           <span class="blurb">Turn the phone into a wireless microphone for a speaker, a browser on Wi-Fi, or a hotspot.</span>
-        </a>
+        </div>
       </li>
       <li>
-        <a href="/webcam/">
+        <div class="app">
           <span class="name">WebCam</span>
-          <span class="go">Site</span>
+          <span class="actions">
+            <a class="go" href="/webcam/">Site</a>
+            <a class="go" href="https://play.google.com/store/apps/details?id=com.stream.webcam&amp;referrer=utm_source%3Dnorthforceapps%26utm_medium%3Dorganic%26utm_campaign%3Dhome_webcam" rel="noopener">Play</a>
+          </span>
           <span class="blurb">Phone as a Wi-Fi camera. Browser, VLC or OBS over RTSP. No cloud.</span>
-        </a>
+        </div>
       </li>
     </ul>
     <footer>
